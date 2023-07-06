@@ -1,0 +1,25 @@
+conditions:
+  - fieldName: WeatherType
+    className: WeatherTypeConditionEvaluator
+    rules:
+      - operator: Equal
+        value: Thunderstorm
+        advice: "Don’t step out! A Storm is brewing!"
+      - operator: Equal
+        value: Wind
+        advice: "It’s too windy, watch out!"
+      - operator: Equal
+        value: Rain
+        advice: "Carry an umbrella"
+  - fieldName: MaxTemperature
+    className: MaxTemperatureConditionEvaluator
+    rules:
+      - operator: GreaterThan
+        value: "40"
+        advice: "Use sunscreen lotion"
+  - fieldName: WindSpeed
+    className: WindSpeedConditionEvaluator
+    rules:
+      - operator: GreaterThan
+        value: "10"
+        advice: "It’s too windy, watch out!"

@@ -1,0 +1,56 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 2,
+  "list": [
+    {
+      "dt": 1687456800,
+      "main": {
+        "temp": 298.54,
+        "feels_like": 298.47,
+        "temp_min": 296.87,
+        "temp_max": 298.54,
+        "pressure": 1017,
+        "sea_level": 1017,
+        "grnd_level": 1015,
+        "humidity": 51,
+        "temp_kf": 1.67
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 70
+      },
+      "wind": {
+        "speed": 0.91,
+        "deg": 330,
+        "gust": 2.27
+      },
+      "visibility": 10000,
+      "pop": 0.29,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2023-06-22 18:00:00"
+    }
+  ],
+  "city": {
+    "id": 2643743,
+    "name": "London",
+    "coord": {
+      "lat": 51.5085,
+      "lon": -0.1257
+    },
+    "country": "GB",
+    "population": 1000000,
+    "timezone": 3600,
+    "sunrise": 1687405393,
+    "sunset": 1687465292
+  }
+}

@@ -36,7 +36,7 @@ This service purpose is to predict hourly weather conditions for a city
 * I have used **dependency injection** as much as possible.
 * I have tried to make logical & small commits.
 * I have integrated Swagger for documentation.
-* I have used Strategy pattern to evaluate multiple weather conditions.
+* I have used Factory & Strategy pattern to evaluate multiple weather conditions.
 * I have added ci-cd.yml to setup CI CD pipeline in Github flow.
 * I have also tried to Dockerize the application.
 * I have created immutable states with value objects wherever possible.
@@ -53,3 +53,18 @@ This service purpose is to predict hourly weather conditions for a city
 * I could have encrypted the API key of OpenWeather APIs.
 * I could have added the support offline mode with toggles.
 * I could have added basic UI on React/Angular.
+
+## Implementation approach
+
+This is a simple RESTful Web service create using SpringBoot framework using 3 layered architecture. I wanted to make
+this application maintainable & extensible. I have a vision that someone should be able to change
+business logic or add new requirements with minimalistic code changes.
+
+So in order to achieve that I used [conditions.yml](src%2Fmain%2Fresources%2Fconditions.yml) where I have mentioned 3
+main things
+
+1. operator
+2. value
+3. advice
+
+So one can try update the advice & operator by just restarting the service so to refresh in-memory configurations.

@@ -10,6 +10,7 @@ This service purpose is to predict hourly weather conditions for a city
 
 1. Run `docker build --tag=weather-prediction-service:latest .` to build Docker image
 2. Run `docker run -p 8080:8080 weather-prediction-service:latest` to run the service
+3. Example CURL to fetch some data `curl --location 'http://localhost:8080/api/v1/weathers?city=delhi&uit=metric'`
 
 ### API documentation (Swagger)
 
